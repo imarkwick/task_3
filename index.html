@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
 
     <title>Home page</title>
-
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>	
     <link rel="stylesheet" href="./assets/css/main.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/jquery.fullPage.css" type="text/css">
 
-</head>
+  </head>
 
-<body>		 
+  <body> 
 
     <header>
-        <h1></h1>
+      <h1></h1>
     </header>
 
-    <div id="scene">
+    <div id="fullpage">
 
-        <h3 id="banner-title">Urban</h3>
+      <div class="section" id="section1" data-anchor="home">
 
-        <div class="bgImage urban" id='image'></div>
+        <div id="scene">
+          <h3 id="banner-title">Home</h3>
+          <div class="bgImage" id='image'></div>
+        </div>
+
+      </div>
+
+      <div class="section" id="section2" data-anchor="trees">
+
+        <div id="scene">
+          <h3 id="banner-title">Trees</h3>
+          <div class="bgImage trees" id='image'></div>
+        </div>
+
+      </div>
+
+      <div class="section" id="section3" data-anchor="urban">
+
+        <div id="scene">
+          <h3 id="banner-title">Urban</h3>
+          <div class="bgImage urban" id='image'></div>
+        </div>
+      </div>
 
     </div>
 
     <footer>
-        Footer Content
+      Footer Content
     </footer>
-
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
-
-</body>
+    <script type="text/javascript" src="assets/js/jquery.fullPage.js"></script>
+  
+  </body>
 </html>
